@@ -18,6 +18,11 @@ Each scripts inside 'siteapis' contains the class constructors that parses the r
 
 This project could be condensed a long way by making one script capable of talking to all the APIs, which is is planned for the future.
 
+## Understanding the output
+Currently, this program hasn't yet been connected to the trading accounts on any of the exchanges, however the basic functionality has been implemented. Running the program essentially runs a test on the order book data it receives assuming you are trading with 1 BTC.
+After the orderbook data has been collected from each site, the program will display a list of the volume of each cryptocurrency you would receive on each site respectively. The trade deal.
+The program then takes the highest amount, then iterates through the sell data on each site to see if that volume can be traded back at a profit. The second set of output lists what you would receive on each site when converting back to Bitcoin.
+
 ## Libraries
 
 XLWT is a python excel library used for logging purposes<br/>
